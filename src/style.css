@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Cores Brito Comercial ─────────────────── */
+  --color-brand-primary:        #3B4DC0;
+  --color-brand-primary-dark:   #2a3799;
+  --color-brand-primary-light:  #5060d4;
+  --color-brand-yellow:         #F5C518;
+  --color-brand-green:          #2E8B57;
+  --color-brand-dark:           #181b3a;
+  --color-brand-dark-alt:       #0f1124;
+
+  /* ── Fontes ────────────────────────────────── */
+  --font-heading: 'Bebas Neue', 'Impact', sans-serif;
+  --font-body:    'Lato', 'Segoe UI', system-ui, sans-serif;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.15;
+  }
+
+  a { text-decoration: none; }
+
+  img, svg, video { display: block; max-width: 100%; }
+}
