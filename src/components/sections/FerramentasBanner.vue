@@ -1,7 +1,7 @@
 <script setup lang="ts">
 function scrollToFerramentas(): void {
-  const el = document.getElementById('ferramentas')
-  el?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const el = document.getElementById("ferramentas");
+  el?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 </script>
 
@@ -14,11 +14,13 @@ function scrollToFerramentas(): void {
         <p class="ferramentas-banner__sub">
           Seja qual for o seu projeto, certamente, vai precisar de alguma.
         </p>
-        <button class="ferramentas-banner__btn" @click="scrollToFerramentas">Ver ferramentas</button>
+        <button class="ferramentas-banner__btn" @click="scrollToFerramentas">
+          Ver ferramentas
+        </button>
       </div>
       <div class="ferramentas-banner__img-wrap">
         <img
-          src="/wp-content/uploads/2024/06/vonder_img.png"
+          :src="'https://placehold.co/600x400/1f2937/fbbf24?text=Ferramentas+Vonder'"
           alt="Seleção de Ferramentas Vonder"
           loading="lazy"
           decoding="async"
@@ -39,14 +41,13 @@ function scrollToFerramentas(): void {
 .ferramentas-banner__overlay {
   position: absolute;
   inset: 0;
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 20px,
-      rgba(255,255,255,0.02) 20px,
-      rgba(255,255,255,0.02) 40px
-    );
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 20px,
+    rgba(255, 255, 255, 0.02) 20px,
+    rgba(255, 255, 255, 0.02) 40px
+  );
   pointer-events: none;
 }
 .ferramentas-banner__container {
@@ -63,7 +64,7 @@ function scrollToFerramentas(): void {
   color: #fff;
 }
 .ferramentas-banner__title {
-  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  font-family: "Bebas Neue", "Impact", sans-serif;
   font-size: clamp(1.8rem, 4vw, 3rem);
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -72,7 +73,7 @@ function scrollToFerramentas(): void {
 }
 .ferramentas-banner__sub {
   font-size: 1rem;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
   margin: 0 0 1.5rem;
 }
@@ -87,7 +88,9 @@ function scrollToFerramentas(): void {
   text-decoration: none;
   padding: 0.7rem 1.8rem;
   border-radius: 4px;
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
 .ferramentas-banner__btn:hover {
   background: #e09010;
@@ -102,7 +105,7 @@ function scrollToFerramentas(): void {
   max-width: 100%;
   max-height: 280px;
   object-fit: contain;
-  filter: drop-shadow(0 8px 20px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.5));
 }
 @media (max-width: 767px) {
   .ferramentas-banner__container {

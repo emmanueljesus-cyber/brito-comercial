@@ -10,11 +10,12 @@
       <!-- Texto -->
       <div class="hero__text" data-aos="fade-right">
         <h1 class="hero__title">
-          Bem-vindo à<br>
+          Bem-vindo à<br />
           <span class="hero__brand">Brito Comercial</span>
         </h1>
         <p class="hero__subtitle">
-          Com larga experiência em distribuição e logística. Valorizamos a parceria com nossos clientes e nosso time.
+          Com larga experiência em distribuição e logística. Valorizamos a
+          parceria com nossos clientes e nosso time.
         </p>
         <a href="#" class="hero__cta">Compre aqui</a>
       </div>
@@ -22,7 +23,7 @@
       <!-- Imagem produto -->
       <div class="hero__image-wrap" data-aos="fade-left">
         <img
-          src="/wp-content/uploads/2025/05/ac3-1.png"
+          :src="'https://britocomercial.com.br/wp-content/uploads/2025/05/ac3-1.png'"
           alt="Produtos Brito Comercial"
           class="hero__image"
           fetchpriority="high"
@@ -46,8 +47,16 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 80% 50%, rgba(245,166,35,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse at 20% 80%, rgba(34,197,94,0.08) 0%, transparent 50%);
+    radial-gradient(
+      ellipse at 80% 50%,
+      rgba(245, 166, 35, 0.12) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 20% 80%,
+      rgba(34, 197, 94, 0.08) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 .hero__container {
@@ -65,7 +74,7 @@
   color: #fff;
 }
 .hero__title {
-  font-family: 'Bebas Neue', 'Impact', sans-serif;
+  font-family: "Bebas Neue", "Impact", sans-serif;
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   line-height: 1.1;
   font-weight: 400;
@@ -79,7 +88,7 @@
 }
 .hero__subtitle {
   font-size: 1rem;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   line-height: 1.6;
   margin: 0 0 1.5rem;
   max-width: 420px;
@@ -95,7 +104,9 @@
   text-decoration: none;
   padding: 0.75rem 2rem;
   border-radius: 4px;
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
 .hero__cta:hover {
   background: #e09010;
@@ -111,7 +122,7 @@
   max-width: 100%;
   max-height: 360px;
   object-fit: contain;
-  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.4));
 }
 @media (max-width: 767px) {
   .hero__container {
