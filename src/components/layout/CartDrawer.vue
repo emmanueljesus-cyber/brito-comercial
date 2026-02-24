@@ -94,7 +94,7 @@ function sendToWhatsApp(phone: string): void {
       <!-- Footer do drawer -->
       <div v-if="cartStore.items.length > 0" class="cart-drawer__footer">
         <p class="cart-drawer__summary">
-          {{ cartStore.totalCount }} {{ cartStore.totalCount === 1 ? 'produto' : 'produtos' }} na sua lista
+          {{ cartStore.totalCount.value }} {{ cartStore.totalCount.value === 1 ? 'produto' : 'produtos' }} na sua lista
         </p>
 
         <div class="flex flex-col gap-2">

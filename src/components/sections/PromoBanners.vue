@@ -6,7 +6,7 @@ interface Banner {
 }
 
 defineProps<{
-  banners: [Banner, Banner]
+  banners: Banner[]
 }>()
 </script>
 

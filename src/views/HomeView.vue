@@ -18,7 +18,7 @@ const promoBanners = [
     alt: 'Ofertas da Semana',
     link: '#',
   },
-] as const
+]
 
 // ── Banners de categoria (3 colunas mosaico) ──────────────────────────────────
 const categoryBanners = [
@@ -37,7 +37,7 @@ const categoryBanners = [
     label: 'Hidráulico',
     sectionId: 'banheiro',
   },
-] as const
+]
 
 // ── Mais Vendidos (12 produtos, grid 6) ───────────────────────────────────────
 const maisVendidos: Product[] = [

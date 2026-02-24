@@ -6,7 +6,7 @@ interface CategoryBanner {
 }
 
 defineProps<{
-  banners: [CategoryBanner, CategoryBanner, CategoryBanner]
+  banners: CategoryBanner[]
 }>()
 
 function scrollToSection(id: string): void {
