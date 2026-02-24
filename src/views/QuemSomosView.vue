@@ -1,7 +1,6 @@
 <script setup lang="ts">
 // Página "Quem Somos" — breve texto institucional sobre a Brito Comercial
 const WA_P1 = '5573981019260'
-const WA_P2 = '5573982361945'
 </script>
 
 <template>

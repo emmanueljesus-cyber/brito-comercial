@@ -18,7 +18,6 @@ const related = computed<Product[]>(() =>
 const added = ref(false)
 
 const WA_P1 = '5573981019260'
-const WA_P2 = '5573982361945'
 
 function addToCart(): void {
   if (!product.value) return

@@ -2,7 +2,6 @@
 import BritoLogo from '@/components/ui/BritoLogo.vue'
 
 const WA_P1 = '5573981019260'
-const WA_P2 = '5573982361945'
 
 const menuLinks = [
   { label: 'Início', href: '/#/' },

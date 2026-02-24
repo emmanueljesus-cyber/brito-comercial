@@ -15,7 +15,6 @@ function closeMenu(): void {
 }
 
 const WA_P1 = '5573981019260'
-const WA_P2 = '5573982361945'
 
 const navLinks = [
   { label: 'Início',      href: '/#/' },
