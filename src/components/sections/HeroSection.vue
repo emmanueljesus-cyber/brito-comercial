@@ -23,7 +23,7 @@
       <!-- Imagem produto -->
       <div class="hero__image-wrap" data-aos="fade-left">
         <img
-          :src="'https://britocomercial.com.br/wp-content/uploads/2025/05/ac3-1.png'"
+          src="/wp-content/uploads/2025/05/ac3-1.png"
           alt="Produtos Brito Comercial"
           class="hero__image"
           fetchpriority="high"
