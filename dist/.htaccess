@@ -1,5 +1,11 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Redireciona sem www para com www
+  RewriteCond %{HTTP_HOST} ^comercialbritoatacado\.com\.br$ [NC]
+  RewriteRule ^(.*)$ https://www.comercialbritoatacado.com.br/$1 [R=301,L]
+
+  # Fallback para Vue Router (HTML5 History Mode)
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
