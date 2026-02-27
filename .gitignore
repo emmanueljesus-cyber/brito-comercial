@@ -8,8 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
-dist-ssr
+# dist e dist-ssr agora são versionados para deploy via cPanel
+# dist-ssr
 *.local
 
 # Editor directories and files
